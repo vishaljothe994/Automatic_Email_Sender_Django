@@ -1,0 +1,38 @@
+# Automatic Email Sender Django Project
+
+Automatically send event-related emails to employees using Django.
+
+## Table of Contents
+- [Project Overview](#project-overview)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Testing](#testing)
+
+
+
+## Project Overview
+This project aims to automate the process of sending event-related emails, such as birthdays and work anniversaries, to employees. It utilizes Django, a Python web framework, for building the backend. The project involves models to represent employees, events, email templates, and email sending logs. It also includes views for sending emails Manually and a cron job for scheduling the email sending process.
+
+
+## Installation
+1. Clone the repository:
+2. Create and activate a virtual environment:
+3. Install project dependencies:
+4. Configure the database settings in `settings.py`.
+5. Apply migrations:
+6. Create a superuser for the admin interface:
+7. Run the development server:
+
+
+## Usage
+1. Access the admin interface at `http://127.0.0.1:8000/admin/` and log in with the superuser credentials.
+2. Manage employees, events, email templates, and email logs through the admin interface.
+3. Configure the email backend settings in `settings.py`.
+4. Define email templates for different event types.
+5. Run the email sending process manually using the admin interface or set up the cron job for automated sending.
+6. To manually send event emails, make a GET request to the following API endpoint:
+    GET http://localhost:8000/api/send-email/
+
+
+## Testing
+Run tests using the following command:
